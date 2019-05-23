@@ -1,0 +1,33 @@
+{
+  "name": "startgrunt",
+  "version": "1.0.0",
+  "description": "Basic starter Grunt file for front-end development. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kierglover/gruntStart.git"
+  },
+  "keywords": [
+    "Grunt",
+    "Js"
+  ],
+  "author": "Kieran Glover",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kierglover/gruntStart/issues"
+  },
+  "homepage": "https://github.com/kierglover/gruntStart#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-cssnano": "^2.1.0",
+    "grunt-serve": "^0.1.6"
+  },
+  "dependencies": {
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
