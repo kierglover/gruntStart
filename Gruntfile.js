@@ -2,10 +2,15 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 
-//SIMPLE PHP SERVER //
-serve: {
+//BROWSERSYNC STUFF //
+browserSync: {
+    bsFiles: {
+        src : 'assets/css/*.css'
+    },
     options: {
-        port: 8000,
+        server: {
+            baseDir: "./"
+        }
     }
 },
      // COMBINES JS //
@@ -50,11 +55,11 @@ serve: {
 
 });
 
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-cssnano');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-serve');
 
     grunt.registerTask('default', ['watch']);
 };
